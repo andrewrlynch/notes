@@ -1,5 +1,6 @@
 ---
 title: About these notes
+enableToc: false
 ---
 
 **Hi! I'm Andrew.** I like to discover and build things. These are my working notes.
