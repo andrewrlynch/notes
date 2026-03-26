@@ -2,7 +2,7 @@
 title: About these notes
 ---
 
-**Hi! I'm Andrew and.** I like to discover things and make other things. These are my working notes
+**Hi! I'm Andrew.** I like to discover and build things. These are my working notes.
 
 ## I'm a computational and experimental biologist 
 
