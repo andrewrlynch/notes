@@ -2,9 +2,7 @@
 title: About these notes
 ---
 
-# Hi! I'm Andrew and these are my working notes.
-
-I like to discover things and make other things.
+**Hi! I'm Andrew and.** I like to discover things and make other things. These are my working notes
 
 ## I'm a computational and experimental biologist 
 
@@ -16,4 +14,4 @@ I primarily study tumor/somatic evolution, genetic instability, phenotype plasti
 
 ## I dabble in creative stuff too.
 
-I write stories and essays, do worldbuilding, and play D&D. I build digital projects and play music. (Mostly guitar.)
+I cook. I play music. (Mostly guitar.) I write stories and essays. I do worldbuilding and play D&D. I build random digital stuff.
