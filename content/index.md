@@ -1,18 +1,6 @@
----
-title: About these notes
-enableToc: false
----
+**Hey I'm Andrew!** These are my notes.
 
-**Hi! I'm Andrew.** I like to discover and build things. These are my working notes.
+These are mostly related to my work as a cancer scientist. I study genetic instability, phenotype plasticity, and tumor evolution. Additional topics include cell and molecular biology, genomics, bioinformatics, agent and foundation models in research. Equally nerdy stuff includes metacognition, productivity, and personal knowledge management.
 
-## I'm a computational and experimental biologist 
+Relatedly, in [[concepts]] you will notice a dense collection of notes. The is (mostly) the output of [[fossick]], a personal knowledge management collaboration agent I developed (am developing) to 'pan for gold' in my Zotero library.
 
-I primarily study tumor/somatic evolution, genetic instability, phenotype plasticity. So, most notes are related to those topics. Relevant domains include molecular and cellular biology, microbiology, genetics, genomics, bioinformatics, agentic and foundation models in research, philosophy of science.
-
-## I'm also interested in metacognition (or thinking about thinking)...
-
-... which broadly includes tools for thought, productivity, project management, quantified self.
-
-## I dabble in creative stuff too.
-
-I cook. I play music. (Mostly guitar.) I write stories and essays. I do worldbuilding and play D&D. I build random digital stuff.

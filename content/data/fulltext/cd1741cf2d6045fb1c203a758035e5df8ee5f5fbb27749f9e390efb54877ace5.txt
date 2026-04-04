@@ -1,0 +1,2 @@
+abstract
+===SOURCE===Background Because cancer patients with small tumours often relapse despite local and systemic treatment, we investigated the genetic variation of the precursors of distant metastasis at the stage of minimal residual disease. Disseminated tumour cells can be detected by epithelial markers in mesenchymal tissues and represent targets for adjuvant therapies.

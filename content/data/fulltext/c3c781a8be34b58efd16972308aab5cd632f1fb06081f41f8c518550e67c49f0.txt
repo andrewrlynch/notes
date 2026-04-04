@@ -1,0 +1,250 @@
+zotero
+===SOURCE===T H E J O U R N A L O F C E L L B I O L O G Y
+© The Rockefeller University Press  $30.00
+The Journal of Cell Biology, Vol. 180, No. 4, February 25, 2008 665–672
+http://www.jcb.org/cgi/doi/
+JCB
+10.1083/jcb.200712029
+JCB: REPORT
+ Correspondence to Duane A. Compton: duane.a.compton@dartmouth.edu 
+ Abbreviation used in this paper: CIN, chromosomal instability. 
+ The online version of this manuscript contains supplemental material. 
+ Introduction 
+ Solid tumors can be highly aneuploid, with typical karyotypes 
+ranging from 40 to 60 chromosomes but occasionally exceeding 
+70 or more chromosomes (http://cgap.nci.nih.gov/Chromosomes/
+Mitelman). How tumor cells acquire extra chromosomes and 
+maintain them during cell division is currently unknown. In some 
+cases, the unusually high numbers of chromosomes are segre-
+gated faithfully, and the aneuploid karyotype displays little 
+variation over time ( Storchova and Pellman, 2004 ). However, in 
+other cases, aneuploid cells are genetically unstable and fre-
+quently missegregate whole chromosomes in a phenomenon called 
+chromo somal instability (CIN;  Lengauer et al., 1997 ). The ele-
+vated rate of chromosome missegregation in aneuploid tumor 
+cells with CIN causes phenotypic changes that contribute to tumor 
+cell evolution and pose therapeutic challenges ( Gao et al., 2007 ). 
+For example, chromosomal differences could change the growth 
+properties of metastatic cells compared with the primary tumor 
+( Kuukasjarvi et al., 1997 ). Increased chromosome missegregation 
+rates in aneuploid tumor cells with CIN suggest an underlying 
+defect in mitotic fi delity, and it has been presumed that persistent 
+chromosome missegregation causes the high level of aneuploidy 
+observed in tumor cells ( Lengauer et al., 1998 ). Defects in both 
+bipolar spindle assembly (e.g., multipolar spindles) and the 
+spindle assembly checkpoint have been identifi ed in some CIN 
+tumor cell lines ( Cahill et al., 1998 ;  Lingle et al., 2002 ). However, 
+those mitotic defects explain CIN in only a handful of cells, 
+leaving the underlying cause of CIN in most aneuploid cells 
+undetermined. Moreover, the question of whether CIN drives 
+cells into a highly aneuploid state remains unanswered. 
+ Results and discussion 
+ Chromosomes display characteristic movements during align-
+ment and segregation in mitosis that are directly visible by video 
+microscopy. Defects in mitotic processes such as spindle check-
+point function or multipolar spindle assembly predictably impair 
+chromosome behavior by inducing premature entry into anaphase 
+before chromosome alignment and multipolar anaphase, respec-
+tively. Thus, to identify the mechanism of chromosome misseg-
+regation in aneuploid human tumor cell lines with CIN, we used 
+live cell video microscopy to examine chromosome behavior in 
+both chromosomally stable and unstable human cells. We selected 
+two chromosomally stable cell lines (HCT116 and RPE-1) and 
+three aneuploid and CIN cell lines (HT29, MCF-7, and Caco2) 
+for in-depth analyses in this study because these cells have 
+been karyotypically defi ned (Table S1, available at http://www
+.jcb.org/cgi/content/full/jcb.200712029/DC1), represent differ-
+ent tissues of origin, and have each been established in culture 
+for many years. 
+ Chromosomes align effi ciently at metaphase, segregate 
+synchronously at anaphase, and form equivalent daughter cells 
+after cytokinesis in the chromosomally stable colon cancer cell 
+line HCT116 ( Fig. 1 and Video 1, available at http://www.jcb.org/
+cgi/content/full/jcb.200712029/DC). From 35 cells examined 
+by video microscopy, mitotic defects were detected in  < 10% of 
+ S
+olid tumors can be highly aneuploid and many dis-
+play high rates of chromosome missegregation in a 
+phenomenon called chromosomal instability (CIN). 
+In principle, aneuploidy is the consequence of CIN, but the 
+relationship between CIN and aneuploidy has not been 
+clearly deﬁ ned. In this study, we use live cell imaging and 
+clonal cell analyses to evaluate the ﬁ delity of chromosome 
+segregation in chromosomally stable and unstable human 
+cells. We show that improper microtubule – chromosome 
+attachment (merotely) is a cause of chromosome missegre-
+gation in unstable cells and that increasing chromosome 
+missegregation rates by elevating merotely during consecu-
+tive mitoses generates CIN in otherwise stable, near-diploid 
+cells. However, chromosome missegregation compromises 
+the proliferation of diploid cells, indicating that phenotypic 
+changes that permit the propagation of nondiploid cells 
+must combine with elevated chromosome missegregation 
+rates to generate aneuploid cells with CIN.
+ Examining the link between chromosomal instability 
+and aneuploidy in human cells 
+ Sarah L.  Thompson and  Duane A.  Compton 
+ Department of Biochemistry, Dartmouth Medical School, Hanover, NH 03755 
+Downloaded from http://rupress.org/jcb/article-pdf/180/4/665/1336425/jcb_200712029.pdf by University Of Wisconsin-Madison user on 25 October 2022
+
+JCB • VOLUME 180 • NUMBER 4 • 2008
+ 
+directly test the relationship between CIN and aneuploidy using 
+human cultured cells. It has been shown that merotelic kineto-
+chore attachments increase in mitotic cells recovering from drug 
+treatments that perturb spindle organization ( Cimini et al., 1999 , 
+ 2001 ;  Knowlton et al., 2006 ). Those treatments alter the spatio-
+temporal assembly of bipolar spindles, leading to increases in 
+merotelic kinetochore attachment, but they do not inhibit the 
+cell ’ s ability to eventually undergo anaphase with bipolar spindles. 
+Thus, we used mitotic recovery from nocodazole or monastrol 
+treatment as a strategy to increase the incidence of merotelic 
+kinetochore attachments during mitosis in two chromosomally 
+stable, near-diploid cell lines (HCT116 and RPE-1) to evaluate 
+the relationship between CIN and aneuploidy. As expected, we 
+observe increases in lagging chromatids at anaphase in both cell 
+lines recovering from nocodazole or monastrol treatment in mi-
+tosis (Fig. S1 B). Elevated frequencies of lagging chromatids 
+required mitotic recovery from these drugs because lagging 
+chromatid frequencies returned to basal rates if treatments were 
+suspended. Fixed cell analyses verify that kinetochores of lagging 
+chromatids are merotelically attached to spindle microtubules 
+(Fig. S1 C). Time-lapse video microscopy confi rms that cells 
+recovering from monastrol treatment do not enter anaphase 
+before bipolar spindle assembly and chromosome alignment but dis-
+play lagging chromatids at anaphase (Fig. S2 A and Video 4, avail-
+able at http://www.jcb.org/cgi/content/full/jcb.200712029/DC1). 
+Also, these treatments do not impair cell cycle transit (Fig. S2 C) 
+or induce DNA damage as judged by   H2AX histone isoform 
+expression (Fig. S2 B). 
+ To assess mitotic fi delity, we quantifi ed the modal chromo-
+some number and the percentage of cells deviating from that 
+mode in isolated colonies grown for 20 – 30 generations using 
+FISH with chromosome-specifi c centromeric   -satellite DNA 
+probes ( Fig. 2 A ). Colonies were either untreated or forced to 
+recover from nocodazole- or monastrol-induced mitotic delay 
+for one or more consecutive days during the growth of single-cell 
+colonies ( Fig. 2 B ). Chromosome counts were performed on 
+at least three independent colonies for each treatment (Tables 
+S2 and S3, available at http://www.jcb.org/cgi/content/full/jcb
+.200712029/DC1). HCT116 cells did not survive monastrol-
+induced mitotic recovery for 10 or more consecutive days, so 
+monastrol recovery in these cells was limited to nine or fewer 
+consecutive days or at every other day throughout growth of the 
+cell colony. 
+ Untreated HCT116 and RPE-1 cells are chromosomally 
+stable and maintain a near-diploid karyotype ( Lengauer et al., 
+1997 ) as judged by small deviations from a modal number of two 
+for each chromosome ( Fig. 2 C and Tables S2 and S3). Rare treated 
+HCT116 colonies show increases in the modal number of one or 
+all chromosomes examined. Trisomy for one chromosome must 
+occur by missegregation at the earliest stages of colony growth, 
+and tetraploidy most likely arises when cells escape mitotic arrest 
+in the presence of monastrol or nocodazole. However, cells in 
+these colonies show no signifi cant increase in deviation from 
+the modal chromosome number, confi rming that in this cell line, 
+alterations in ploidy itself do not increase the rate of chromo-
+some missegregation ( Lengauer et al., 1997 ). Other colonies of 
+treated HCT116 and RPE-1 cells display signifi cant deviation 
+cells, and these were lagging chromatids at anaphase and chro-
+matin bridges. Similar frequencies of these mitotic errors are 
+observed in fi xed cells that did not express GFP – histone H2B 
+(7.2  ± 1.6% [SEM],  n = 400), demonstrating that the video results 
+are representative (Fig. S1 A). Chromosomes in the chromosom-
+ally unstable colon carcinoma (HT29 and Caco2) and breast 
+cancer (MCF-7) cell lines also align effi ciently on bipolar spindles 
+in metaphase, and no cells enter anaphase before the alignment 
+of all chromosomes ( Fig. 1 and Videos 2 and 3), demonstrating 
+checkpoint profi ciency as previously suggested ( Tighe et al., 2001 ). 
+Lagging chromatids in anaphase is the most common mitotic 
+defect detected and is observed in 24% of HT29 cells ( n = 34), 
+75% of Caco2 cells ( n = 28), and 42% of MCF-7 cells ( n = 33) 
+examined by video microscopy ( Fig. 1 ). In some cases, the lagging 
+chromatids form micronuclei after cytokinesis. Similar frequen-
+cies of anaphase cells with lagging chromatids are observed in 
+fi xed cells that did not express GFP – histone H2B (19.0  ± 2.5% 
+[SEM] in HT29 cells,  n = 300; 66.0  ± 1.7% [SEM] in Caco2 
+cells,  n = 300; 50.0  ± 2.6% [SEM] in MCF-7 cells,  n = 300), 
+demonstrating that these results are representative (Fig. S1 A). 
+Kinetochores on lagging chromatids are often distorted and display 
+microtubule bundles extending toward both spindle poles, demon-
+strating that the failure to segregate properly at anaphase onset 
+is caused by merotelic attachment of the kinetochore to spindle 
+microtubules (Fig. S1 C;  Cimini et al., 2001 ,  2004 ). High per-
+centages of anaphase cells with lagging chromatids is common 
+in CIN cell lines derived from a variety of tumor tissues, includ-
+ing colon, breast, and lung (Fig. S1 A), indicating that this mitotic 
+defect is independent of tissue of origin or oncogenic mutation 
+(e.g., p53 and adenomatous polyposis coli are reported to be wild 
+type in MCF-7 cells but mutated in Caco2 cells; www.sanger
+.ac.uk/perl/genetics/CGP/cosmic;  Liu and Bodmer, 2006 ). 
+The number of lagging chromatids per anaphase in chromo-
+somally unstable cells is between 3- and 14-fold higher than 
+chromosomally stable cells. The magnitude of this increase 
+cannot be accounted for by the increase in the modal chromo-
+some number in each cell line. Thus, in addition to the few cell 
+lines reported with checkpoint defects ( Cahill et al., 1998 ), frequent 
+and persistent merotelic attachment of kinetochores to spindle 
+microtubules is a common mechanism of chromosome missegre-
+gation in aneuploid tumor cells with CIN. Increases in lagging 
+chromatids at anaphase have been reported after perturbation of 
+diverse proteins like BRCA1 ( Joukov et al., 2006 ), Sgo2 ( Huang 
+et al., 2007 ), adenomatous polyposis coli ( Fodde et al., 2001 ; 
+ Green and Kaplan, 2003 ), kinesin-13 proteins (mitotic centromere-
+associated kinesin and Kif2a;  Kline-Smith et al., 2004 ;  Ganem 
+et al., 2005 ), Mad2 ( Michel et al., 2001 ), aurora kinase ( Hauf et al., 
+2003; Knowlton et al., 2006 ), cdc4 ( Rajagopalan et al., 2004 ), 
+cyclin E overexpression ( Rajagopalan et al., 2004 ), and the Ndc80 
+complex ( DeLuca et al., 2006 ), refl ecting the complex nature of 
+establishing and maintaining proper kinetochore microtubule 
+attachments ( Cimini and Degrassi, 2005; Salmon et al., 2005 ). 
+Merotelic kinetochore attachments elude spindle assembly check-
+point detection ( Cimini et al., 2001 ), indicating that CIN may 
+arise through reductions in the effi ciency of merotelic correction. 
+ The identifi cation of merotely as a cause of chromosome 
+missegregation in CIN cell lines provided us the opportunity to 
+Downloaded from http://rupress.org/jcb/article-pdf/180/4/665/1336425/jcb_200712029.pdf by University Of Wisconsin-Madison user on 25 October 2022
+
+CHROMOSOMAL INSTABILITY AND ANEUPLOIDY  • THOMPSON AND COMPTON
+vidual colonies differ in which chromosomes deviate from the 
+mode (Tables S2 and S3). Also, chromosome numbers among cells 
+within individual colonies vary ( Fig. 2 A ), demonstrating that 
+multiple, independent chromosome missegregation events occur 
+during colony growth. These chromosomal changes are charac-
+teristic of cells with CIN and demonstrate that chromosome 
+missegregation does not obligatorily impair cytokinesis as was 
+recently proposed ( Shi and King, 2005 ). Thus, elevating the in-
+cidence of merotely in otherwise stable, near-diploid cells induces 
+chromosome missegregation with the characteristics of CIN. 
+ A striking outcome of these analyses is that colonies of 
+both RPE-1 and HCT116 cells emerging after 20 – 30 genera-
+tions with elevated merotely at each consecutive mitosis show no 
+signifi cant deviation from two for all chromosomes analyzed and 
+from a modal chromosome number of two for one or more chro-
+mosomes when the incidence of merotely is increased during 
+consecutive mitoses (Tables S2 and S3). The extent of chromo-
+some deviations was higher in colonies of HCT116 cells com-
+pared with RPE-1 cells and may reflect differences between 
+transformed (HCT116) and immortalized but not transformed 
+(RPE-1) cells.  Fig. 2 C presents the percentage of cells with 
+chromo some deviations from representative single colonies of 
+HCT116 cells and illustrates that chromosome missegregation 
+is more prevalent when mitotic cells recover from monastrol 
+compared with nocodazole and that maximal deviation occurs 
+after approximately fi ve to seven consecutive days of mitotic 
+recovery ( Fig. 2 C ). Importantly, both chromosome gains and 
+losses contribute to deviation from diploidy ( Fig. 2 A ), and indi-
+ Figure 1.  Chromosome segregation in human tumor cell lines. 
+ GFP – histone H2B was expressed in colon carcinoma HCT116 
+and Caco2 cells and in breast cancer MCF-7 cells. Images 
+selected from time-lapse videos are shown with times given 
+in minutes. Arrowheads identify unaligned chromosomes in 
+prometaphase, and arrows identify lagging chromatids at ana-
+phase. Bars, 5   m. 
+Downloaded from http://rupress.org/jcb/article-pdf/180/4/665/1336425/jcb_200712029.pdf by University Of Wisconsin-Madison user on 25 October 2022
+
+JCB • VOLUME 180 • NUMBER 4 • 2008
+ 
+and aneuploid tumor cells with CIN ( Fig. 3 ). For this assay, 
+we collected mitotic cells by shake-off, spread the cells on 
+slides at very low density

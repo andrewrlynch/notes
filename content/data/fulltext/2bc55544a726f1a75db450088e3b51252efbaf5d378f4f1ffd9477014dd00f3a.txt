@@ -1,0 +1,265 @@
+zotero
+===SOURCE===APPLICATION
+abc: an R package for approximate Bayesian
+computation (ABC)
+Katalin Csille´ ry1*, Olivier Franc¸ ois2 and Michael G. B. Blum2
+1Irstea, UR EMGR, 2 rue de la Papeterie, F-38402 Saint Martin d’He`res, France; and 2Computational and
+Mathematical Biology Team, Laboratoire Techniques de l’Inge´nierie Me´dicale et de la Complexite´, Universite´ Joseph
+Fourier, Grenoble 1, Centre National de la Recherche Scientiﬁque UMR5525, F-38706 La Tronche, France
+Summary
+1. Many recent statistical applications involve inference under complex models, where it is compu-
+tationally prohibitive to calculate likelihoods but possible to simulate data. Approximate Bayesian
+computation (ABC) is devoted to these complex models because it bypasses the evaluation of the
+likelihood function by comparing observed and simulated data.
+2. We introduce the R package ‘abc’ that implements several ABC algorithms for performing
+parameter estimation and model selection. In particular, the recently developed nonlinear heteros-
+cedastic regression methods for ABC are implemented. The ‘abc’ package also includes a cross-vali-
+dation tool for measuring the accuracy of ABC estimates and to calculate the misclassiﬁcation
+probabilities when performing model selection. The main functions are accompanied by appropri-
+ate summary and plotting tools.
+3. R is already widely used in bioinformatics and several ﬁelds of biology. The R package ‘abc’ will
+make the ABC algorithms available to a large number of R users. ‘abc’ is a freely available R pack-
+age under the GPL license, and it can be downloaded at http://cran.r-project.org/web/packages/
+abc/index.html.
+Key-words: coalescent, model-based inference, neural networks, population genetics
+Introduction
+In recent years, approximate Bayesian computation (ABC)
+has become a popular method for parameter inference and
+model selection under complex models, where the evaluation
+of the likelihood function is computationally prohibitive. ABC
+bypasses exact likelihood calculations via the use of summary
+statistics and simulations, which, in turn, allows the consider-
+ation of highly complex models. The name ABC was ﬁrst
+coined by Beaumont et al. (2002) in population genetics, for
+inference under coalescent models, but its origin goes back to
+works by Tavare´ et al. (1997); Pritchard et al. (1999). ABC is
+now increasingly applied especially in ecology or systems
+biology (for reviews of ABC methods and applications, see
+Beaumont 2010; Bertorelle et al. 2010; Csille´ ry et al. 2010).
+Software implementations of ABC dedicated to particular
+problems have already been developed in these ﬁelds
+(Anderson et al. 2005; Hickerson et al. 2007; Cornuet et al.
+2008; Jobin & Mountain 2008; Tallmon et al. 2008; Lopes
+et al. 2009; Thornton 2009; Bray et al. 2010; Cornuet et al.
+2010; Liepe et al. 2010; Wegmann et al. 2010; Huang et al.
+2011).
+The integration of ABC in a software package poses several
+challenges. First, data simulation, which is in the core of any
+ABC analysis, is speciﬁc to the model in question. Thus, many
+existing ABC software are speciﬁc to a particular class of mod-
+els (Hickerson et al. 2007; Cornuet et al. 2008; Lopes et al.
+2009) or even to the estimation of a particular parameter (Tall-
+mon et al. 2008). Further, model comparison is an integral
+part of any Bayesian analysis; thus, it is essential to provide
+software, where users are able to ﬁt diﬀerent models to their
+data. Second, an ABC analysis often follows a trial–error
+approach, where users experiment with diﬀerent models, ABC
+algorithms or summary statistics. Therefore, it is important
+that users can run diﬀerent analyses using batch ﬁles, which
+contain each analysis as a sequence of commands. Third, ABC
+is subject to intensive research, and many new algorithms have
+been published in the past few years (Beaumont et al. 2002,
+*Correspondence author. E-mail: kati.csillery@gmail.com
+Correspondence site: http://www.respond2articles.com/MEE/
+Methods in Ecology and Evolution 2012, 3, 475–479
+doi: 10.1111/j.2041-210X.2011.00179.x
+ 2012 The Authors. Methods in Ecology and Evolution  2012 British Ecological Society
+ 2041210x, 2012, 3, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00179.x by University Of Wisconsin, Wiley Online Library on [25/10/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+2009; Bortot et al. 2007; Sisson et al. 2007; Blum 2010). Thus,
+an ABC software should be ﬂexible enough to accommodate
+the new developments of the ﬁeld.
+Here, we introduce a generalist R package ‘abc’, which aims
+to address the above challenges (R Development Core Team
+2011). The price to pay for the generality and ﬂexibility is that
+the simulation of data and the calculation of summary statis-
+tics are left to the users. However, simulation software might
+be called from an R session, which opens up the possibility for
+a highly interactive ABC analysis. For coalescent models,
+for instance, users can apply one of the many existing software
+for simulating genetic data such as ‘ms’ (Hudson 2002) or
+‘fastsimcoal’ (Excoﬃer & Foll 2011). The calculation of
+summary statistics could be performed using either R or some
+speciﬁc software such as ‘msABC’ (Pavlidis et al. 2010), which
+runs ‘ms’ and calculates summary statistics from the output
+ﬁles. ABC methods have also been developed to handle full
+data (Sousa et al. 2009) – allele frequencies in population
+genetics – but the ‘abc’ package is dedicated to summary statis-
+tic approaches, which represent the bulk of the literature.
+R provides many advantages in the context of ABC: (i) R
+already possesses the necessary tools to handle, analyse and
+visualise large data sets, (ii) sequences of R commands can be
+saved in a script ﬁle and (iii) R is a free and collaborative
+project; thus, new algorithms can be easily integrated to the
+package (e.g. via contributions from their authors).
+Implementation
+The main steps of an ABC analysis follow the general scheme
+of any Bayesian analysis: formulating a model, ﬁtting the
+model to data (parameter estimation) and improving the
+model by checking its ﬁt (posterior predictive checks) and com-
+paring it to other models (Gelman et al. 2003; Csille´ ry et al.
+2010). ‘abc’ provides functions for the inference and model
+comparison steps, and generic tools of R can be used for model
+checking.
+To use the package, the following R objects should be pre-
+pared: a vector of the observed summary statistics, a matrix of
+the simulated summary statistics, where each row corresponds
+to a simulation and each column corresponds to a summary
+statistic, and ﬁnally, a matrix of the simulated parameter
+values, where each row corresponds to a simulation and each
+column corresponds to a parameter.
+PARAMETER INFERENCE
+For the sake of clarity, we recall the general scheme of param-
+eter estimation with ABC. Suppose that we want to compute
+the posterior probability distribution of a univariate or multi-
+variate parameter, h. A parameter value hi is sampled from its
+prior distribution to simulate a data set yi, for i ¼ 1,…,n
+where n is the number of simulations. A set of summary statis-
+tics S(yi) is computed from the simulated data and compared
+to the summary statistics obtained from the actual data S(y0)
+using a distance measure d. We consider the Euclidean
+distance for d, and the ‘abc’ package standardises each
+summary statistic with a robust estimate of the standard devi-
+ation (the median absolute deviation). If d(S(yi),S(y0)) (i.e. the
+distance between S(yi) and S(y0)) is less than a given thresh-
+old, the parameter value hi is accepted. To set a threshold for
+d, above which simulations are rejected, the user has to pro-
+vide the tolerance rate, which is deﬁned as the proportion of
+accepted simulations. The accepted hi’s form a sample from
+an approximation of the posterior distribution. The estima-
+tion of the posterior distribution can be improved by the use
+of regression techniques, which we detail in the following par-
+agraph.
+The function "abc" implements three ABC algorithms for
+constructing the posterior distribution from the accepted hi’s: a
+rejection method and two regression-based correction methods
+that use either local linear regression (Beaumont et al. 2002) or
+neural networks (Blum & Franc¸ ois 2010). When the rejection
+method ("rejection") is selected, the accepted hi’s are con-
+sidered as a sample from the posterior distribution (Pritchard
+et al. 1999). The two regression methods ("loclinear" and
+"neuralnet") implement an additional step to correct for
+the imperfect match between the accepted, S(yi), and observed
+summary statistics, S(y0), using the following regression equa-
+tion in the vicinity of S(y0)
+hi ¼ mðSðyiÞÞ þ i;
+eqn 1
+where m is the regression function and the i’s are centred
+random variables with equal variance. Simulations that
+closely match S(y0) are given more weight by assigning to
+each simulation (hi,S(yi)) the weight K[d(S(yi),S(y0))], and
+the package implements diﬀerent statistical kernels K. The
+local linear model ("loclinear") assumes a linear func-
+tion for m, while neural networks account for the non-
+linearity of m and allow users to reduce the dimension of
+the set of summary statistics. Once the regression is per-
+formed, a weighted sample from the posterior distribution
+is obtained by correcting the hi’s as follows:
+h
+i ¼ ^mðSðy0ÞÞ þ ^i;
+eqn 2
+where ^mðÞ is the estimated conditional mean and the ^is
+are the empirical residuals of the regression (Beaumont
+et al. 2002). Additionally, a correction for heteroscedastic-
+ity is applied, by default, in "abc",
+h
+i ¼ ^mðSðy0ÞÞ þ ^rðSðy0ÞÞ
+^rðSðyiÞÞ ^i
+eqn 3
+where ^rðÞ is the estimated conditional standard deviation
+(Blum & Franc¸ ois 2010).
+The function "abc" returns an object of class "abc" that
+can be printed, summarised and plotted using the S3 methods
+of the R generic functions, "print", "summary", "hist"
+and "plot". The function "print" returns a description of
+the object. The function "summary" calculates summaries of
+the posterior distributions, such as the mode, mean, median
+and credible intervals, taking into account the posterior
+weights, when appropriate. The "hist" function displays the
+histogram of the weighted posterior sample. The "plot"
+function generates various plots that allow the evaluation of
+K. Csille´ry, O. Franc¸ois & M. G. B. Blum
+ 2012 The Authors. Methods in Ecology and Evolution  2012 British Ecological Society, Methods in Ecology and Evolution, 3, 475–479
+ 2041210x, 2012, 3, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00179.x by University Of Wisconsin, Wiley Online Library on [25/10/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+the quality of estimation when one of the regression methods
+is used. The following plots are generated: a density plot of
+the prior distribution, a density plot of the posterior distribu-
+tion estimated with and without regression-based correction,
+a scatter plot of the Euclidean distances as a function of the
+parameter values and a normal Q–Q plot of the residuals
+from the regression. When the heteroscedastic regression
+model is used, a normal Q–Q plot of the standardised residu-
+als is displayed (see Fig. 1 panel a).
+Finally, we note that alternative algorithms exist that sample
+from an updated distribution that is closer in shape to the pos-
+terior than to the prior (Marjoram et al. 2003; Beaumont et al.
+2009; Wegmann et al. 2010). However, we do not implement
+these methods in the ‘abc’ package because they require the
+repeated use of the simulation software.
+POSTERIOR PREDICTIVE CHECKS
+We strongly recommend that users perform posterior predic-
+tive checks after ﬁtting their model to the data. There is no spe-
+ciﬁc function in the package ‘abc’ for posterior predictive
+checks; nevertheless, the task can be easily carried out using R
+(a) Parameter inference and regression diagnostics
+0e + 00
+2e−05
+Ne
+Density
+Prior
+N = 1000   Bandwidth = 1926
+0·00000
+0·00015
+Ne
+Density
+Posterior with "loclinear"
+N = 500   Bandwidth = 486·3
+"rejection" and prior as reference
+–2
+–1
+Ne
+log euclidean distance
+Euclidean distances
+N(All/plotted) =  50 000/1000
+–3
+–2
+–1
+–5000
+Residuals from lsfit()
+Normal Q−Q plot
+Theoretical quantiles
+Residuals
+Ne
+True value 
+Estimated value
+bott
+const
+exp
+Frequency
+(b) Cross-validation
+(c) Model misclassification
+Fig. 1. Typical graphical outputs of the R ‘abc’ package (model selection and estimation of the eﬀective population size Ne from population
+genetic data). (a) Parameter inference and regression diagnostics: plots show (clock-wise) the prior distribution, the distances between observed
+and simulated summary statistics as a function of the parameter values (where red points indicate the accepted values), normal Q–Q plot of the
+residuals of the regression, and the posterior distribution obtained with and without the regression correction method (and the prior distribution,
+for reference). (b) Cross-validation for parameter estimation: plot shows the estimated values as a function of true parameter values. Diﬀerent
+colours correspond to diﬀerent values of the tolerance rate. (c) Model misclassiﬁcation: a graphical illustration of the confusion matrix for three
+models. The colours from dark to light grey correspond to models bott, const, exp, accordingly. If the simulations were perfectly classiﬁed,
+each bar would have a single colour of its own corresponding model. The following R code can be used to re-generate these plots.
+> library(abc)
+> data(human)
+> cv.modsel <- cv4postpr(models, stat.3pops.sim, nval¼50, tol¼.01, method¼"mnlogistic")
+> plot(cv.modsel)
+> stat.italy.sim <- subset(stat.3pops.sim, subset¼models¼¼"bott")
+> cv.res.reg <- cv4abc(data.frame(Na¼par.italy.sim [,"Ne"]), stat.italy.sim,
++ nval¼200, tols¼c(.005,.001), method¼"loclinear")
+> plot(cv.res.reg, caption¼"Ne")
+> res <- abc(target¼stat.voight["italian",], param¼data.frame(Na¼par.italy.sim [, "Ne"]),
++ sumstat¼stat.italy.sim, tol¼0.005, transf¼c("log"), method¼"neuralnet")
+> plot(res, param¼par.italy.sim [, "Ne"])
+R package: abc
+ 2012 The Authors. Methods in Ecology and Evolution  2012 British Ecological Society, Methods in Ecology and Evolution, 3, 475–479
+ 2041210x, 2012, 3, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00179.x by University Of Wisconsin, Wiley Online Library on [25/10/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+and the simulation software. A fully executable example using

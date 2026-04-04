@@ -1,0 +1,77 @@
+pmc
+===SOURCE===Results Label-Based Description of Tree Shapes 
+ Figure 2  illustrates the labels at the nodes of two binary trees. The label of the root node uniquely defines the tree shape. Indeed, tree isomorphism algorithms use similar labeling ( Hopcroft and Tarjan 1972 ;  Lueker and Booth 1979 ;  W 1979 ;  Colbourn and Booth 1981 ;  Sayward 1981 ). If  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$R_a$\end{document}  and  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$R_b$\end{document}  are the root nodes of binary trees  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$T_a$\end{document}  and  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$T_b$\end{document} , the tree shapes are the same if and only if  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$\phi_2(R_a)=\phi_2(R_b)$\end{document} . The map between trees and labels is bijective: every positive integer corresponds to a unique tree shape and vice versa. 
+ Figure 2 Illustration of the labels of the nodes of binary trees. Tips have the Label  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$1$\end{document} . Labels of internal nodes are shown in black. The only difference between the trees in (a) and (b) is that in (b), the bottom-most tip from (a) has been removed. As a consequence, most of the labels are the same. 
+ Metrics are an appealing way to compare sets of objects; defining a metric defines a  space  for the set of objects—in principle allowing navigation through the space, study of the space’s dimension and structure, and the certainty that two objects occupy the same location if and only if they are identical. The labeling scheme gives rise to several natural metrics on tree shapes, based on the intuition that tree shapes are similar when they share many subtrees with the same labels. Simulated Random Trees There are several ways to sample random trees in ways known to produce trees of different shapes (in particular, different asymmetry). These include models capturing equal versus different speciation rates, continuous time BD processes with different rates and others (see Methods). We used the metric arising from our labeling scheme to compare these.  Figure 3  shows a visualization of the tree-tree distances between trees from different random models. The metric groups trees from each process together and distinguishes between them well. Summary statistics such as tree imbalance also distinguish some of these groups well (particularly the PDA, Aldous, Yule and biased speciation model); indeed, we have elsewhere related the basic reproduction number to the number of cherries ( Plazzotta and Colijn 2016 ), and because the cherry is a symmetric configuration, trees with a high frequency of cherries will be more symmetric than those with a low frequency of cherries. 
+ Figure 3 Top: Six sample trees, one from each of six different random processes. Bottom: Multi-dimensional scaling (MDS) plots showing that trees from each process are grouped together in the metric. Bottom left: trees from a BD model with different values of  \documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+}{}$R_0=\lambda/\mu$\end{document} . Bottom right: trees derived from the Yule, PDA, Aldous and biased models, each with 500 tips. 
+ Tropical Versus Seasonal Influenza We also compared trees inferred from sequences of the HA protein in influenza A H3N2 sequences. Influenza A is highly seasonal outside the tropics ( Russell et al. 2008 ), with the majority of cases occurring in winter. In contrast, there is little seasonal variation in transmission in the tropics. In addition, over long periods of time, influenza evolves in response to pressure from the human immune system, undergoing evolution

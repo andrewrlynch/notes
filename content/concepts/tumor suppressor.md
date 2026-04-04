@@ -1,0 +1,21 @@
+---
+cluster: false
+created: '2026-03-31'
+createdBy: fossick
+elevated_at: []
+hub: false
+hub_score: 0
+members: []
+modified: '2026-03-31'
+order: 1
+sources: []
+synthesis_status: none
+tags: []
+title: tumor suppressor
+type: concept
+---
+
+A gene or gene product that inhibits cell proliferation and prevents the development of malignant tumors.
+
+## Related Claims
+- [[concepts/Aneuploidy exhibits dual roles as oncogenic and tumor-suppressive|Aneuploidy exhibits dual roles as oncogenic and tumor-suppressive]]

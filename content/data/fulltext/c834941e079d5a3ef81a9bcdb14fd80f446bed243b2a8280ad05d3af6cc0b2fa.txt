@@ -1,0 +1,300 @@
+zotero
+===SOURCE===Single-cell chromosomal imbalances
+detection by array CGH
+Cedric Le Caignec1,2, Claudia Spits2, Karen Sermon2, Martine De Rycke2,
+Bernard Thienpont1, Sophie Debrock4, Catherine Staessen2, Yves Moreau3,
+Jean-Pierre Fryns1, Andre Van Steirteghem2, Inge Liebaers2 and Joris R. Vermeesch1,*
+1Center for Human Genetics, University Hospital Gasthuisberg, Leuven, Belgium, 2Research Centre
+Reproduction and Genetics, University Hospital and Medical School, Vrije Universiteit Brussel, Brussels, Belgium,
+3ESAT-SISTA, K.U. Leuven, Leuven, Belgium and 4Leuven University Fertility Center, University Hospital
+Gasthuisberg, Leuven, Belgium
+Received February 20, 2006; Revised March 22, 2006; Accepted April 15, 2006
+ABSTRACT
+Genomic imbalances are a major cause of constitu-
+tional and acquired disorders. Therefore, aneuploidy
+screening has become the cornerstone of preimplan-
+tation, prenatal and postnatal genetic diagnosis, as
+well as a routine aspect of the diagnostic workup of
+many acquired disorders. Recently, array comparative
+genomic hybridization (array CGH) has been intro-
+duced as a rapid and high-resolution method for the
+detectionofbothbenignanddisease-causinggenomic
+copy-number variations. Until now, array CGH has
+been performed using a significant quantity of DNA
+derived from a pool of cells. Here, we present an
+array CGH method that accurately detects chromo-
+somal imbalances from a single lymphoblast, fibro-
+blast and blastomere within a single day. Trisomy 13,
+18,21andmonosomyX,aswell asnormalploidylevels
+of all other chromosomes, were accurately determined
+from single fibroblasts. Moreover, we showed that
+a segmental deletion as small as 34 Mb could be
+detected. Finally, we demonstrated the possibility to
+detect aneuploidies in single blastomeres derived
+from preimplantation embryos. This technique offers
+new possibilities for genetic analysis of single cells
+in general and opens the route towards aneuploidy
+screening and detection of unbalanced translocations
+in preimplantation embryos in particular.
+INTRODUCTION
+Single-cell genetic analysis at the chromosomal or at the
+molecular level is important for basic research as well as
+for clinical purposes. An example is its use for aneuploidy
+screening of preimplantation embryos obtained by in vitro
+fertilization (IVF) (1). Aneuploidy screening of a single cell
+would allow addressing basic questions about the chromo-
+somal constitution of gametes and the mitotic stability of
+chromosomes during early embryogenesis. In the clinic, this
+screening could be used to select a single embryo with the
+highest chance to implant (1). Several methods, such as ﬂuor-
+escent in situ hybridization (FISH) and PCR-based methods,
+have been used to analyse chromosomes of a single cell, e.g.
+a blastomere biopsied from an 8-cell embryo (2). However,
+these approaches can only analyse a small number of genetic
+loci in a single cell.
+By contrast, genome-wide aneuploidy screening of a single
+cell can be performed by comparative genomic hybridization
+(CGH) following whole genome ampliﬁcation (WGA) by
+degenerated oligonucleotide primed PCR (DOP-PCR) or
+linker-adaptor PCR. In this method, two DNA samples, one
+obtained by DNA ampliﬁcation from the single cell of inter-
+est and one from a reference, are differentially labelled and
+hybridized to metaphase spreads derived from cells of a chro-
+mosomally normal individual. CGH has been applied to
+detect chromosomal copy-number changes within single blas-
+tomeres or polar bodies (3) and within single cancer cells (4).
+Nonetheless, this method is labour intensive and time con-
+suming, which limits its diagnostic potential and hampers
+its use in research.
+Based on the same principle as metaphase CGH, array
+CGH differs in that genomic clones from selected regions
+of the genome are spotted on a slide, replacing normal
+‘control’ metaphase cells as the target DNA (5,6). This
+method has a high-resolution and is amenable to automation.
+Thus far, array CGH has mainly been performed using DNA
+from large numbers of cells. Attempts to reduce the amount
+of DNA needed for array CGH resulted in the accurate
+*To whom correspondence should be addressed. Tel: +32 1634 5941; Fax: +32 1634 6060; Email: Joris.Vermeesch@uz.kuleuven.ac.be
+ The Author 2006. Published by Oxford University Press. All rights reserved.
+The online version of this article has been published under an open access model. Users are entitled to use, reproduce, disseminate, or display the open access
+version of this article for non-commercial purposes provided that: the original authorship is properly and fully attributed; the Journal and Oxford University Press
+are attributed as the original place of publication with the correct citation details given; if an article is subsequently reproduced or disseminated not in its entirety but
+only in part or as a derivative work this must be clearly indicated. For commercial re-use, please contact journals.permissions@oxfordjournals.org
+Nucleic Acids Research, 2006, Vol. 34, No. 9
+e68
+doi:10.1093/nar/gkl336
+ 
+Published online May 12, 2006
+
+detection of copy-number variations from as little as 1 ng of
+DNA (7). Recently, Hu et al. (8) have used array CGH for
+the detection of chromosomal copy-number variation from
+single lymphoblasts and ﬁbroblasts following DOP-PCR
+ampliﬁcation. However, no robust results were obtained
+since incorrect ratios were sometimes observed for chromo-
+somes 2, 4, 9, 11, 17, 22, X and Y.
+The
+major
+hurdle
+towards
+genome-wide
+single-cell
+analysis is the difﬁculty to amplify genomic DNA (gDNA)
+without sequence bias. Recently, an isothermal DNA ampli-
+ﬁcation method (termed multiple displacement ampliﬁcation,
+MDA) has been applied to small DNA samples or single
+cells, leading to the synthesis of DNA with limited sequence
+representation bias (9–12). Here, we have extended array
+CGH technology by making the accurate detection of chro-
+mosomal imbalances possible from a single lymphoblast,
+ﬁbroblast and blastomere following MDA.
+MATERIALS AND METHODS
+Cell lines
+Epstein–Barr virus (EBV)-transformed lymphoblasts and ﬁbro-
+blasts were used to develop the single-cell ampliﬁcation and the
+array CGH experiments. Four different ﬁbroblast cell lines
+were derived from patients affected by, respectively, trisomy
+13, 18, 21 and monosomy X. Fibroblasts containing an intersti-
+tial 4q deletion (46,XX,del(4)(q13.1q22.3)) and EBV cells
+containing an unbalanced reciprocal translocation involving
+chromosomes 14 and X (46,XX,der(X)t(X;14)(q21.3;q23.1))
+were used for segmental deletion/duplication detection. Array
+CGH experiments were performed using gDNA from the two
+cell lines containing a segmental deletion and/or duplication
+to deﬁne the exact size of each rearrangement. For the ﬁbro-
+blasts containing an interstitial 4q deletion, the size of the
+deleted region was 34 Mb corresponding to 39 clones spotted
+on the array (from RP11-340A13 to RP11-44P19). For the
+EBV cell line, the size of the 14q duplication was 47 Mb cor-
+responding to 63 clones (from RP11-62H20 to CTC-820M16)
+and the Xq deletion was 58 Mb corresponding to 70 clones
+(from RP3-380C13 to RP11-218L14). For each of the six cell
+lines, three single cells were ampliﬁed.
+Collection and lysis of single cells
+Lymphoblasts or ﬁbroblasts were washed three times in
+500 ml phosphate-buffered saline. The cells were then
+washed
+in
+droplets
+of
+Ca2+-
+and
+Mg2+-free
+medium
+[14 mM NaCl, 0.2 mM KCl, 0.04 mM NaH2PO4·2H2O,
+5.5 mM glucose, 1.2 mM NaHCO3, 0.02 mM EDTA and
+0.01% (w/v) phenol red] supplemented with 15 mg/ml
+BSA (Sigma–Aldrich, St Louis, MO) using ﬁne hand-drawn
+microcapillaries and were transferred to 200 ml PCR tubes
+containing 2.5 ml alkaline lysis buffer (ALB; 200 mM
+KOH and 50 mM DTT). An aliquot from the last washing
+droplet was taken as a negative control for each collected
+single cell. The samples were stored at 80C for at least
+30 min and were further incubated for 10 min at 65C
+prior to the MDA reaction.
+Embryo biopsy and disaggregation
+Approval for the present study was obtained from the institu-
+tional
+committee
+of
+medical
+ethics
+(Vrije
+Universiteit
+Brussel) and all donating patients gave informed consent.
+Embryo 1 used in this study was from a couple who under-
+went preimplantation genetic diagnosis (PGD) for aneuploidy
+screening, in which case FISH was performed for chromo-
+somes 13, 18, 21, X and Y (13). Embryo 2 was from a couple
+who underwent PGD because the mother was a Robertsonian
+translocation carrier involving chromosomes 13 and 14, in
+which case FISH was performed for chromosomes 13, 14,
+18, 21, X and Y. The embryo biopsy was performed the
+morning of day 3 after oocyte retrieval. A hole was made
+in the zona pellucida (ZP) using two or three laser pulses
+of 5–7 ms of a non-contact 1.48 mm diode laser system
+(Fertilase, Octax, Herbron, Germany) coupled to a micro-
+manipulator on an inverted microscope. Two blastomeres
+containing a nucleus were gently aspirated and used for
+FISH analysis.
+The two embryos diagnosed by FISH as being abnormal
+were selected for array CGH analysis. Embryos were brieﬂy
+incubated in acidic Tyrode’s solution (pH 2.4) (Vitrolife,
+Goteborg, Sweden) to remove the ZP. They were then trans-
+ferred to droplets of Ca2+- and Mg2+-free medium supple-
+mented
+with
+mg/ml
+BSA
+and
+gently
+pipetted
+to
+disaggregate the individual blastomeres. Blastomeres with
+a clearly visible nucleus were washed three times in the dis-
+sociation medium and transferred using a mouth-piece and
+a ﬁnely drawn Pasteur pipette to a 200 ml PCR tube contain-
+ing 2.5 ml ALB. An aliquot was taken from the last washing
+droplet to serve as a negative control and samples and blanks
+were further treated as described for the single lymphoblasts
+or ﬁbroblasts.
+Whole genome amplification
+DOP-PCR ampliﬁcations and MDA with Bst DNA poly-
+merase were performed using 1 ng and 100 pg of gDNA
+as well as single-cell lysates according to the protocols
+described by Hu et al. (8) or Lage et al. (11), respectively.
+MDA with f29 DNA polymerase was performed using
+the GenomiPhi DNA Ampliﬁcation Kit (GE Healthcare,
+Piscataway, NJ). The f29 DNA polymerase was assayed on
+100 pg gDNA and single-cell lysates. Prior to the MDA reac-
+tion, 2.5 ml of neutralization buffer (0.9 M Tris–HCl, pH 8.3,
+0.3 M KCl and 0.2 M HCl) was added to the sample to neut-
+ralise ALB. GenomiPhi sample buffer (9 ml) containing
+the random hexamer primers was added to the template fol-
+lowed by GenomiPhi reaction buffer (9 ml) and GenomiPhi
+Enzyme Mix (1 ml). The isothermal ampliﬁcation was per-
+formed at 30C for 3 h and the reaction was stopped upon
+incubation at 65C for 10 min. The MDA products were puri-
+ﬁed and resuspended in 50 ml of elution buffer (High Pure
+PCR Product Puriﬁcation Kit, Roche, Basel, Switzerland).
+All ampliﬁcation products were quantiﬁed with a spectropho-
+tometer (Nanodrop ND-1000 spectrophotometer; Nanodrop
+Technologies, Rockland, DE) and their quality was evaluated
+by PCR for two loci (IVS27AC28.4 and D17S1841).
+Although spectrophotometric analysis showed DNA in the
+MDA negative controls, no ampliﬁcation product was detec-
+ted after locus-speciﬁc PCR in any of the negative controls,
+e68
+Nucleic Acids Research, 2006, Vol. 34, No. 9
+PAGE 2 OF 12
+
+proving that the ampliﬁed DNA was non-speciﬁc and did
+not originate from contamination with human DNA. The
+non-speciﬁc DNA is most probably due to primer-directed
+DNA synthesis in the absence of DNA template or to
+contamination of the enzyme with bacterial DNA.
+Array CGH
+For ﬁbroblasts and blastomeres aneuploidy screening, an
+array (KUL Human 4K BAC array Aneuploidy screening)
+containing 4114 clones [3587 BAC and PAC clones at an
+average resolution of 1 Mb (14), 96 additional clones
+(RP clones; plate 1, offset A1) for each of the chromosomes
+18, 19, 20, 21 and 22 from the Human 32K BAC Re-Array
+of CHORI BACPAC Resources (http://bacpac.chori.org/
+genomicRearrays.php) and 47 home-made clones (CME)]
+was used (15). The products were arrayed in duplicate
+using a Lucidea spotter (GE Healthcare).
+Array CGH was carried out as described previously (15)
+with minor modiﬁcations. Non-ampliﬁed gDNAs from male
+and female controls were used as references. Ampliﬁed
+(test) and reference DNA samples (300 ng each) were
+labelled for 2 h by random primer labelling (BioPrime
+Array CGH Genomic Labelling System; Invitrogen, Carls-
+bad, CA) using Cy5- and Cy3-labelled dCTPs (GE Health-
+care), respectively. Since Cy5-labelled DNA gave higher
+intensity signals than Cy3-labelled DNA, a lower amount of
+Cy5-labelled DNA was mixed to Cy3-labelled DNA, 2.1 and
+4.9 mg, respectively, as calculated from the spectrophoto-
+metric values. Labelled probes were combined with 100 mg
+Cot-1 DNA (human Cot-1 DNA; Invitrogen) followed by
+ethanol precipitation. Resuspension of the pellet was done
+in 45 ml hybridization buffer (50% formamide, 10% dextran
+sulfate, 0.1% Tween-20, 2· SSC and 10 mM Tris–HCl,
+pH 7.5) containing 400 mg yeast tRNA to hybridize a spotting
+area of 24 · 60 mm during one night. The slide was blocked
+with 50 mg Cot-1 DNA and 300 mg salmon testes DNA
+(DNA from salmon testes, Sigma Aldrich) dissolved in
+60 ml hybridization buffer.
+Experiments using single cells containing a segmental
+deletion and/or duplication were performed later. A second
+array (KUL Human 4K_2 BAC array Aneuploidy screening)
+containing 4013 clones [3475 BAC and PAC clones at an
+average resolution of 1 Mb, 96 additional clones (RP clones;
+plate 1, offset A1) for each of the chromosomes 18, 19, 20, 21
+and 22 from the Human 32K BAC Re-Array of CHORI
+BACPAC Resources and 58 home-made clones (CME)]
+was developed using a new generation spotter (MicroGrid
+II spotter; Genomic Solutions, Cambridge, UK) allowing
+higher density arrays. Since the clones were spotted in duplic-
+ate on an area two times reduced, ampliﬁed and reference
+DNAs, labelled DNAs, buffers and Cot-1 DNA quantities
+were also two times reduced.
+Since non-speciﬁc DNA was present in the MDA negative
+controls, we hypothesized that this DNA would increase the
+background noise of each spot. To test this possibility, the
+negative control DNA was added to the blocking solution
+before hybridization. However, no signiﬁcant higher signal-
+to-noise ratios were obtained suggesting that the non-speciﬁc
+DNA was not a major cause of array noise and it was omitted
+in all subsequent experiments.
+Following labelling, hybridization and washing of the
+slides, arrays were scanned at 532 and 635 nm using
+a GenePix 4000B scanner (Axon Instruments Inc., Foster
+City, CA). The scan images were processed with GenePix
+Pro 6.0 software. Data analysis was performed using Excel
+(Microsoft Corporation, Redmond, WA). In short, spot
+intensities were corrected for local background and only
+spots with signal intensities at least 1.2-fold above back-
+ground were included in the analysis. Since all clones were
+printed in duplicate, two ratios of Cy5 to Cy3 ﬂuorescent
+intensity (log2 ratio) were calculated for each. For the
